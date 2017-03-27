@@ -44,9 +44,34 @@ $klein->service()->Template = new Klein\DataCollection\DataCollection(
 //-----------------------------
 
 $klein->respond('/', function() use ($klein) {
+	
 	$klein->service()->render( APP.'views/home.php', [] );
+	
 });
 
+$klein->respond('/about', function() use ($klein) {
+	
+	$klein->service()->render( APP.'views/about.php', [] );
+	
+});
+
+$klein->respond('/skills', function() use ($klein) {
+	
+	$klein->service()->render( APP.'views/skills.php', [] );
+	
+});
+
+$klein->respond('/team', function() use ($klein) {
+	
+	$klein->service()->render( APP.'views/team.php', [] );
+	
+});
+
+$klein->respond('/showcase', function() use ($klein) {
+	
+	$klein->service()->render( APP.'views/showcase.php', [] );
+	
+});
 
 $klein->respond('/contact/?', function() use ($klein) {
 	
@@ -54,7 +79,29 @@ $klein->respond('/contact/?', function() use ($klein) {
 
 });
 
+$klein->respond('/blog', function() use ($klein) {
+	
+	$klein->service()->render( APP.'views/blog/index.php', [] );
+	
+});
 
+$klein->respond('/login', function() use ($klein) {
+
+	// Use the layout without header and footer
+	$klein->service()->layout( APP.'layouts/empty.php' );
+	
+	$klein->service()->render( APP.'views/login.php', [] );
+	
+});
+
+$klein->respond('/register', function() use ($klein) {
+
+	// Use the layout without header and footer
+	$klein->service()->layout( APP.'layouts/empty.php' );
+	
+	$klein->service()->render( APP.'views/login.php', [] );
+	
+});
 
 
 //-----------------------------

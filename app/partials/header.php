@@ -8,16 +8,16 @@
           </a>
         </div>
         <nav class="main col-md-offset-1 col-xs-9 center-xs">
-          <a href="#">About</a>
-          <a href="#">Skills</a>
-          <a href="#">Team</a>
-          <a href="#">Showcase</a>
-          <a href="#">Contact</a>
-          <a href="#">Blog</a>
+          <a href="/about">About</a>
+          <a href="/skills">Skills</a>
+          <a href="/team">Team</a>
+          <a href="/showcase">Showcase</a>
+          <a href="/contact">Contact</a>
+          <a href="/blog">Blog</a>
         </nav>
         <div class="auth col-md-2 end-md col-xs-3 start-xs">
-          <a href="#">Log In</a>
-          <a class="t-red" href="#">Sign Up</a>
+          <a href="/login">Log In</a>
+          <a class="t-red" href="/register">Sign Up</a>
         </div>
       </header>
       <div class="hamburger">
