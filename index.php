@@ -32,8 +32,8 @@
           <a href="#">Blog</a>
         </nav>
         <div class="auth col-md-2 end-md col-xs-3 start-xs">
-          <a href="#">Log In</a>
-          <a class="t-red" href="#">Sign Up</a>
+          <a href="/login_register/login.php">Log In</a>
+          <a class="t-red" href="/login_register/register.php">Sign Up</a>
         </div>
       </header>
       <div class="hamburger">
